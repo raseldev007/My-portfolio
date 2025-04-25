@@ -129,3 +129,14 @@ const sendEmail = (e) => {
 
 contactForm.addEventListener('submit', sendEmail);
 
+//Extra
+
+document.querySelector(".hamburger").addEventListener("click", function() {
+    document.querySelector(".nav-menu").classList.toggle("active");
+  });
+
+  //From GPT
+
+  
+  
+

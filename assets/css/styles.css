@@ -326,6 +326,17 @@
     margin-left: auto;
   }
   
+  /* Form GPT */
+
+  .home__img {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  
+  
   /*=============== ABOUT ===============*/
   
   .about {
@@ -649,7 +660,63 @@
     bottom: 3rem;
   }
   
-  /* Show scrollup */
+  /* Show scrollup mobile extra*/
+/* Default Styles (Desktop) */
+.nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.hamburger {
+  display: none; /* Hidden by default */
+  font-size: 30px;
+  cursor: pointer;
+}
+
+
+/* Mobile View */
+
+/* from GPT
+
+
+/* End GPT */
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+
+  .nav-menu {
+    display: none; /* Hide menu */
+    flex-direction: column;
+    background: #111;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .nav-menu a {
+    display: block;
+    padding: 10px;
+    color: white;
+  }
+
+  .hamburger {
+    display: block; /* Show on mobile */
+  }
+
+  /* Show menu when active */
+  .nav-menu.active {
+    display: flex;
+  }
+}
+
+
   
   /*=============== BREAKPOINTS ===============*/
   /* For large devices */
