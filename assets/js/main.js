@@ -146,7 +146,33 @@ function scrollActive() {
         }
     })
 }
-window.addEventListener('scroll', scrollActive)
+
+/*==================== PORTFOLIO MODAL ====================*/
+function openWeatherModal() {
+    document.getElementById("weatherModal").style.display = "block";
+}
+
+function closeWeatherModal() {
+    document.getElementById("weatherModal").style.display = "none";
+}
+
+/*==================== NBDA DETAILS TOGGLE ====================*/
+function openNBDA() {
+    document.getElementById("nbdaModal").style.display = "block";
+}
+
+function closeNBDA() {
+    document.getElementById("nbdaModal").style.display = "none";
+}
+
+/*==================== AMAR BARI DETAIL TOGGLE ====================*/
+function openAmarBari() {
+    document.getElementById("amarBariModal").style.display = "block";
+}
+
+function closeAmarBari() {
+    document.getElementById("amarBariModal").style.display = "none";
+}
 
 
 

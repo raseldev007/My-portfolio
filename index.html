@@ -107,7 +107,7 @@
 
           <p class="about__description">
             Hi! I’m Rafiul Islam Rasel, a passionate App Developer based in Bangladesh. I specialize in creating
-            high-performance, user-friendly mobile applications using Android (Java and Flutter) and iOS (Flutter).
+            high-performance, user-friendly mobile applications using Android (Flutter) and iOS (Flutter).
             With a strong background in software development, I focus on delivering seamless user experiences through
             clean and efficient code. I love solving complex problems and bringing innovative ideas to life.
             Beyond coding, I stay updated with the latest tech trends and continuously enhance my skills. I enjoy
@@ -126,10 +126,7 @@
           <div class="tabs__content">
             <div class="tabs__item tab__active" data-content id="skills">
               <div class="tabs__data grid">
-                <p class="tabs__description">
-                  <span>User Experience design</span> - UI/UX
-                  <span>Attracts the user and make it work.</span>
-                </p>
+
                 <p class="tabs__description">
                   <span>Web and Interface design</span> - Development
                   <span>Websites and web experiences....</span>
@@ -243,17 +240,9 @@
           </p>
         </div>
 
-        <!--services item 4-->
 
-        <div class="services__item">
-          <i class="uil uil-desktop services__icon"> </i>
-          <h3 class="services__title">Graphics Design</h3>
-          <p class="services__description">
-            I help businesses develop data-driven strategies to optimize growth, improve efficiency, and stay ahead of
-            the
-            competition.
-          </p>
-        </div>
+
+
 
         <!--services item 5-->
 
@@ -310,39 +299,168 @@
         </div>
 
         <!--portfolio 2 -->
-        <div class="portfolio__item">
-          <img src="assets/img/portfolio-2.png" alt="" class="portfolio__img" />
+        <div class="portfolio__item" onclick="openWeatherModal()" style="cursor: pointer;">
+          <img src="assets/img/portfolio-3.jpg" alt="BD Weather App" class="portfolio__img" />
 
           <div class="portfolio__data">
-            <p class="portfolio__subtitle">Product Design</p>
-            <h3 class="portfolio__title">App Development</h3>
-            <p class="portfolio__description">I have completed a few works of web design, keep in touch</p>
+            <p class="portfolio__subtitle">App Development</p>
+            <h3 class="portfolio__title">BD Weather App</h3>
+            <p class="portfolio__description">Weather Intelligence Platform</p>
           </div>
         </div>
 
-        <!--portfolio 3 -->
-
-        <div class="portfolio__item">
-          <img src="assets/img/portfolio-3.jpg" alt="" class="portfolio__img" />
-
-          <div class="portfolio__data">
-            <p class="portfolio__subtitle">Graphics Design</p>
-            <h3 class="portfolio__title">Adobe Illustrator</h3>
-            <p class="portfolio__description">I have completed a few works of web design, keep in touch</p>
+        <!-- NBDA App Card -->
+        <div class="portfolio__item" onclick="openNBDA()"
+          style="background:linear-gradient(135deg,#8b0000,#ff4d4d); border-radius:16px; padding:20px; cursor:pointer; color:white; box-shadow:0 10px 30px rgba(0,0,0,0.4); display:flex; flex-direction:column; justify-content:space-between; min-height: 220px;">
+          <div>
+            <p style="margin:0;font-size:14px;opacity:0.9;">
+              App Development
+            </p>
+            <h3 style="margin:8px 0 0 0;font-size:22px; color: white;">
+              NBDA
+            </h3>
+            <p style="margin-top:6px;font-size:14px; color: #eee;">
+              Blood Donation Management
+            </p>
           </div>
+
+          <img src="assets/img/nbda-logo.jpg" alt="NBDA Logo"
+            style="width:70px;height:70px;align-self:flex-end; border-radius: 50%;" />
         </div>
 
-        <!--portfolio 4 -->
-
-        <div class="portfolio__item">
-          <img src="assets/img/portfolio-4.png" alt="" class="portfolio__img" />
-
-          <div class="portfolio__data">
-            <p class="portfolio__subtitle">Application Design</p>
-            <h3 class="portfolio__title">UI Design</h3>
-            <p class="portfolio__description">I have completed a few works of web design, keep in touch</p>
+        <!-- Amar Bari App Card -->
+        <div class="portfolio__item" onclick="openAmarBari()"
+          style="background:linear-gradient(135deg,#0f766e,#22c55e); border-radius:16px; padding:20px; cursor:pointer; color:white; box-shadow:0 10px 30px rgba(0,0,0,0.4); display:flex; flex-direction:column; justify-content:space-between; min-height: 220px;">
+          <div>
+            <p style="margin:0;font-size:14px;opacity:0.9;">
+              App Development
+            </p>
+            <h3 style="margin:8px 0 0 0;font-size:22px; color: white;">
+              Amar Bari
+            </h3>
+            <p style="margin-top:6px;font-size:14px; color: #eee;">
+              Rent & Tenant Management
+            </p>
           </div>
+
+          <img src="assets/img/amar-bari-logo.png" alt="Amar Bari Logo"
+            style="width:70px;height:70px;align-self:flex-end; border-radius: 12px;" />
         </div>
+      </div>
+
+      <!-- NBDA Details Section (Converted to Modal) -->
+      <div id="nbdaModal"
+        style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:9999; overflow:auto;">
+        <div
+          style="max-width:900px; margin:60px auto; background:#111; color:#fff; border-radius:20px; padding:30px; position:relative;">
+
+          <!-- Close Button -->
+          <span onclick="closeNBDA()" style="position:absolute; top:20px; right:25px; font-size:28px; cursor:pointer;">
+            &times;
+          </span>
+
+          <!-- Title -->
+          <h2 style="margin-top:0; color: #ff4d4d;">
+            NBDA – Blood Donation App
+          </h2>
+
+          <p style="line-height:1.6;color:#ccc; opacity: 0.9;">
+            NBDA is a blood donation management application designed to connect
+            blood donors with patients and hospitals efficiently. The app helps
+            save lives by enabling fast donor discovery and emergency coordination.
+          </p>
+
+          <!-- Feature List -->
+          <h3 style="margin-top:30px;">Key Features</h3>
+
+          <ul style="line-height:1.9; list-style-type: none; padding-left: 0;">
+            <li>Real-time donor search</li>
+            <li>Blood group based filtering</li>
+            <li>Location-based donor filtering</li>
+            <li>Emergency blood request system</li>
+            <li>Direct contact with donors</li>
+          </ul>
+
+          <!-- Tech Stack -->
+          <h3 style="margin-top:30px;">Technology Used</h3>
+
+          <p style="color:#ccc;">
+            Flutter, Firebase Authentication, Cloud Firestore, Firebase Storage
+          </p>
+
+          <!-- Links -->
+          <div style="margin-top:30px;">
+            <a href="#" target="_blank"
+              style="display:inline-block; margin-right:15px; padding:10px 18px; background:#ff5f6d; color:white; text-decoration:none; border-radius:8px;">
+              GitHub
+            </a>
+
+            <a href="nbda-details.html" target="_blank"
+              style="display:inline-block; padding:10px 18px; background:#1abc9c; color:white; text-decoration:none; border-radius:8px;">
+              App Details & Screens
+            </a>
+          </div>
+
+        </div>
+      </div> <!--portfolio 4 -->
+
+      <!-- Amar Bari Modal -->
+      <div id="amarBariModal"
+        style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:9999; overflow:auto;">
+        <div
+          style="max-width:900px; margin:60px auto; background:#111; color:#fff; border-radius:20px; padding:30px; position:relative;">
+
+          <!-- Close Button -->
+          <span onclick="closeAmarBari()"
+            style="position:absolute; top:20px; right:25px; font-size:28px; cursor:pointer;">
+            &times;
+          </span>
+
+          <!-- Title -->
+          <h2 style="margin-top:0; color: #22c55e;">
+            Amar Bari – Rent Manager
+          </h2>
+
+          <p style="line-height:1.6;color:#ccc; opacity: 0.9;">
+            Amar Bari is a Bangladesh-focused rent and tenant management mobile application
+            designed to digitize house rent collection, utility billing, and tenant record management.
+          </p>
+
+          <!-- Feature List -->
+          <h3 style="margin-top:30px;">Key Features</h3>
+
+          <ul style="line-height:1.9; list-style-type: none; padding-left: 0;">
+            <li>Owner & Tenant role-based system</li>
+            <li>Digital rent collection (bKash/Nagad)</li>
+            <li>Automated monthly rent reminders</li>
+            <li>Tenant document storage (NID/Photo)</li>
+            <li>Utility bill tracking & PDF receipts</li>
+          </ul>
+
+          <!-- Tech Stack -->
+          <h3 style="margin-top:30px;">Technology Used</h3>
+
+          <p style="color:#ccc;">
+            Flutter, Firebase Auth, Cloud Firestore, Cloud Functions
+          </p>
+
+          <!-- Links -->
+          <div style="margin-top:30px;">
+            <a href="#" target="_blank"
+              style="display:inline-block; margin-right:15px; padding:10px 18px; background:#ff5f6d; color:white; text-decoration:none; border-radius:8px;">
+              GitHub
+            </a>
+
+            <a href="amar-bari-details.html" target="_blank"
+              style="display:inline-block; padding:10px 18px; background:#1abc9c; color:white; text-decoration:none; border-radius:8px;">
+              App Details & Screens
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+
 
       </div>
     </section>
@@ -441,6 +559,62 @@
       });
     })();
   </script>
+
+  <!--Modal for BD Weather App-->
+  <div id="weatherModal"
+    style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:9999; overflow:auto;">
+    <div
+      style="max-width:900px; margin:60px auto; background:#111; color:#fff; border-radius:20px; padding:30px; position:relative;">
+
+      <!-- Close Button -->
+      <span onclick="closeWeatherModal()"
+        style="position:absolute; top:20px; right:25px; font-size:28px; cursor:pointer;">
+        &times;
+      </span>
+
+      <!-- Title -->
+      <h2 style="margin-top:0;color:#ff5f6d;">
+        BD Weather App
+      </h2>
+
+      <!-- Overview -->
+      <p style="line-height:1.7;opacity:0.9;">
+        BD Weather App is a real-time weather intelligence application focused on Bangladesh.
+        It provides accurate forecasts, live temperature, humidity, wind speed, and weather alerts
+        using modern APIs and clean UI.
+      </p>
+
+      <!-- Features -->
+      <h3 style="margin-top:30px;">Key Features</h3>
+      <ul style="line-height:1.9;">
+        <li>Real-time weather data</li>
+        <li>City-based search (Bangladesh focused)</li>
+        <li>Temperature, humidity, wind & pressure</li>
+        <li>7-day weather forecast</li>
+        <li>Minimal and fast UI</li>
+      </ul>
+
+      <!-- Tech Stack -->
+      <h3 style="margin-top:30px;">Tech Stack</h3>
+      <p>
+        HTML, CSS, JavaScript, Weather API
+      </p>
+
+      <!-- Links -->
+      <div style="margin-top:30px;">
+        <a href="https://github.com/raseldev007/bd-weather-app" target="_blank"
+          style="display:inline-block; margin-right:15px; padding:10px 18px; background:#ff5f6d; color:white; text-decoration:none; border-radius:8px;">
+          GitHub
+        </a>
+
+        <a href="weather-details.html" target="_blank"
+          style="display:inline-block; padding:10px 18px; background:#1abc9c; color:white; text-decoration:none; border-radius:8px;">
+          App Details & Screens
+        </a>
+      </div>
+
+    </div>
+  </div>
 
   <!--Main JS-->
 
