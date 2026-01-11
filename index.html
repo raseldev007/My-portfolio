@@ -17,65 +17,35 @@
 </head>
 
 <body>
+  <canvas id="scifi-canvas"></canvas>
+  <div class="cyber-overlay"></div>
   <!--Header-->
 
   <header class="header" id="header">
     <nav class="nav container">
-      <a href="index.html" class="nav__logo"><span>Dev</span>007</a>
+      <a href="#" class="nav__logo">RASEL<span>.DEV</span></a>
+
       <div class="nav__menu" id="nav-menu">
         <ul class="nav__list">
-          <li><a href="#home" class="nav__link active">Home</a></li>
-
+          <li><a href="#home" class="nav__link active-link">Home</a></li>
           <li><a href="#about" class="nav__link">About</a></li>
-
           <li><a href="#services" class="nav__link">Services</a></li>
-
           <li><a href="#portfolio" class="nav__link">Portfolio</a></li>
-
           <li><a href="#contact" class="nav__link">Contact</a></li>
         </ul>
+
         <div class="nav__close" id="nav-close">
-          <i class="ui uil-times"></i>
+          <i class="uil uil-times"></i>
         </div>
       </div>
 
-      <div class="nav__socials">
-        <a href="https://www.facebook.com/rafiulislamrasel.007" target="_blank" class="nav__social-link">
-          <i class="uil uil-facebook-f"></i>
-        </a>
-
-        <a href="https://x.com/?lang=en" target="_blank" class="nav__social-link">
-          <i class="uil uil-twitter"></i>
-        </a>
-
-        <a href="https://www.linkedin.com" target="_blank" class="nav__social-link">
-          <i class="uil uil-linkedin"></i>
-        </a>
-
-        <a href="https://www.instagram.com/_rasel_007/" target="_blank" class="nav__social-link">
-          <i class="uil uil-instagram"></i>
-        </a>
-
-        <a href="https://github.com/raseldev007" target="_blank" class="nav__social-link">
-          <i class="uil uil-github"></i>
-        </a>
-
-      </div>
-
       <div class="nav__btns">
-        <a href="#contact" class="nav__link-btn btn">Let's Talk</a>
+        <a href="https://drive.google.com/file/d/1bXWzIS1Uu9ryoeeCdFYGqFdduD6-SYja/view?usp=drivesdk" target="_blank"
+          class="button button--ghost" style="padding: 0.6rem 1.25rem;">Resume</a>
+        <div class="nav__toggle" id="nav--toggle">
+          <i class="uil uil-apps"></i>
+        </div>
       </div>
-
-      <div class="nav__toggle" id="nav--toggle">
-        <i class="uil uil-bars"></i>
-      </div>
-
-      </div>
-
-
-      </div>
-
-
     </nav>
   </header>
 
@@ -88,10 +58,41 @@
       <div class="home__container container grid">
         <div class="home__content">
           <span class="home__subtitle">Welcome to my Portfolio</span>
-          <h1 class="home__title">Hello, I am Rasel <span>App Developer.</span> based in Bangladesh.
-          </h1>
+          <h1 class="home__title">MD RASEL <br> <span>APP DEVELOPER</span></h1>
+          <p class="home__description">
+            Building high-performance Android & iOS apps with Clean Architecture & Specialized Expertise in the Flutter
+            Ecosystem.
+          </p>
+
+          <div class="home__btns">
+            <a href="https://drive.google.com/file/d/1bXWzIS1Uu9ryoeeCdFYGqFdduD6-SYja/view?usp=drivesdk"
+              target="_blank" class="button">
+              Download CV <i class="uil uil-file-download-alt button__icon"></i>
+            </a>
+            <a href="#portfolio" class="button button--ghost">
+              View Projects <i class="uil uil-arrow-right button__icon"></i>
+            </a>
+          </div>
+
+          <div class="home__stats">
+            <div class="stat-card">
+              <span class="stat-number">🚀 3+</span>
+              <span class="stat-text">Shipped Apps</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">💻 1 Year</span>
+              <span class="stat-text">Experience</span>
+            </div>
+            <div class="stat-card">
+              <span class="stat-number">🔥 Expert</span>
+              <span class="stat-text">Firebase</span>
+            </div>
+          </div>
         </div>
-        <img src="assets/img/Rasel.jpeg" alt="Rafiul Islam Rasel" class="home__img">
+
+        <div class="home__img-wrapper">
+          <img src="assets/img/Rasel.jpeg" alt="MD RASEL" class="home__img">
+        </div>
       </div>
     </section>
 
@@ -100,92 +101,123 @@
 
     <section class="about section" id="about">
       <div class="about__container container grid">
-        <img src="assets/img/me.jpg" alt="" class="about__img">
+        <div class="about__img-wrapper">
+          <img src="assets/img/me.jpg" alt="MD RASEL" class="about__img">
+        </div>
 
         <div class="about__content">
-          <h2 class="section__title">About me</h2>
+          <h2 class="section__title" style="text-align: left; margin-inline: 0;">Impactful Experience</h2>
 
           <p class="about__description">
-            Hi! I’m Rafiul Islam Rasel, a passionate App Developer based in Bangladesh. I specialize in creating
-            high-performance, user-friendly mobile applications using Android (Flutter) and iOS (Flutter).
-            With a strong background in software development, I focus on delivering seamless user experiences through
-            clean and efficient code. I love solving complex problems and bringing innovative ideas to life.
-            Beyond coding, I stay updated with the latest tech trends and continuously enhance my skills. I enjoy
-            collaborating with designers, developers, and clients to build impactful digital solutions.
-            If you're looking for a dedicated and creative developer to turn ideas into reality, let’s connect and
-            create
-            something amazing!
+            Hi! I’m MD RASEL, a dedicated <b>App Developer</b> based in Bangladesh. I specialize in building
+            high-performance, user-centric mobile applications using <b>Flutter</b> for both Android and iOS.
+            My focus is on Clean Architecture, scalable backends with Firebase, and creating smooth, fluid user
+            interfaces that leave a lasting impression.
           </p>
 
           <div class="tabs__btns">
-            <span class="tabs__btn tab__active" data-target="#skills">Main Skills</span>
-            <span class="tabs__btn" data-target="#awards">Awards</span>
+            <span class="tabs__btn tab__active" data-target="#skills">Skills</span>
             <span class="tabs__btn" data-target="#experience">Experience</span>
-            <span class="tabs__btn" data-target="#education">Education and Certifications</span>
+            <span class="tabs__btn" data-target="#education">Education</span>
+            <span class="tabs__btn" data-target="#awards">Awards</span>
           </div>
-          <div class="tabs__content">
-            <div class="tabs__item tab__active" data-content id="skills">
-              <div class="tabs__data grid">
 
-                <p class="tabs__description">
-                  <span>Web and Interface design</span> - Development
-                  <span>Websites and web experiences....</span>
-                </p>
-                <p class="tabs__description">
-                  <span>App and Interface design</span> - Development
-                  <span>Apps experiences....</span>
-                </p>
-                <p class="tabs__description">
-                  <span>Interaction design</span> - Animation
-                  <span>Attracts the user and I like to move it </span>
-                </p>
+          <div class="tabs__content">
+            <!-- Skills -->
+            <div class="tabs__item tab__active" data-content id="skills">
+              <div class="tabs__data" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));">
+                <div class="stat-card" style="padding: 1rem; text-align: center;">
+                  <i class="uil uil-mobile-android" style="font-size: 2rem; color: var(--first-color);"></i>
+                  <span class="stat-text" style="display: block; margin-top: 0.5rem; font-weight: 600;">Flutter
+                    SDK</span>
+                </div>
+                <div class="stat-card" style="padding: 1rem; text-align: center;">
+                  <i class="uil uil-fire" style="font-size: 2rem; color: var(--first-color);"></i>
+                  <span class="stat-text" style="display: block; margin-top: 0.5rem; font-weight: 600;">Firebase</span>
+                </div>
+                <div class="stat-card" style="padding: 1rem; text-align: center;">
+                  <i class="uil uil-brackets-curly" style="font-size: 2rem; color: var(--first-color);"></i>
+                  <span class="stat-text" style="display: block; margin-top: 0.5rem; font-weight: 600;">Dart & JS</span>
+                </div>
+                <div class="stat-card" style="padding: 1rem; text-align: center;">
+                  <i class="uil uil-layer-group" style="font-size: 2rem; color: var(--first-color);"></i>
+                  <span class="stat-text" style="display: block; margin-top: 0.5rem; font-weight: 600;">Clean
+                    Arch</span>
+                </div>
               </div>
             </div>
-            <!--Item 2 -->
-            <div class="tabs__item" data-content id="awards">
-              <div class="tabs__data grid">
-                <p class="tabs__description">
-                  <span>CPC Volunteer Award</span> - at Computer Proggamming Club (CPC)
-                  <span>2023-2024</span>
-                </p>
-                <p class="tabs__description">
-                  <span>Web and Interface design</span> - Development
-                  <span>2021-2022</span>
-                </p>
-                <p class="tabs__description">
-                  <span>App and Interface design</span> - Onsite
-                  <span>2020</span>
-                </p>
-              </div>
-            </div>
-            <!--Item 3 -->
+
+            <!-- Experience -->
             <div class="tabs__item" data-content id="experience">
-              <div class="tabs__data grid">
-                <p class="tabs__description">
-                  <span>Junior front end Developer</span> - Codenco IT
-                  <span>2023</span>
-                </p>
-                <p class="tabs__description">
-                  <span>as Executive member(Designer)</span> - Computer Programming Club - CPC
-                  <span>2023-2024</span>
-                </p>
+              <div class="experience__card">
+                <div class="experience__header">
+                  <div>
+                    <h3 class="experience__title">Junior Front End Developer</h3>
+                    <span class="experience__company">Codenco IT</span>
+                  </div>
+                  <span class="experience__date">2023</span>
+                </div>
+                <ul class="services__list" style="padding-left: 1rem; font-size: 0.95rem; opacity: 0.8;">
+                  <li>Developed responsive UI components ensuring cross-browser compatibility.</li>
+                  <li>Integrated REST APIs and managed complex state updates.</li>
+                  <li>Improved page load performance by 20% via asset optimization.</li>
+                </ul>
+              </div>
+
+              <div class="experience__card">
+                <div class="experience__header">
+                  <div>
+                    <h3 class="experience__title">Executive Member (Designer)</h3>
+                    <span class="experience__company">Programming Club (CPC)</span>
+                  </div>
+                  <span class="experience__date">2023 - 2024</span>
+                </div>
+                <ul class="services__list" style="padding-left: 1rem; font-size: 0.95rem; opacity: 0.8;">
+                  <li>Led design workshops for 50+ members on UI/UX principles.</li>
+                  <li>Managed visual identity for major university events.</li>
+                </ul>
               </div>
             </div>
-            <!--Item 4 -->
+
+            <!-- Education -->
             <div class="tabs__item" data-content id="education">
-              <div class="tabs__data grid">
-                <p class="tabs__description">
-                  <span>B.sc in CSE</span> - Dhaka International University
-                  <span>2025</span>
-                </p>
-                <p class="tabs__description">
-                  <span>Intermediate Program </span> - Lions School and College, Rangpur
-                  <span>2019</span>
-                </p>
-                <p class="tabs__description">
-                  <span>Graphic Design course</span> - Creative Design BD
-                  <span>2020-2021</span>
-                </p>
+              <div class="experience__card">
+                <div class="experience__header">
+                  <div>
+                    <h3 class="experience__title">B.Sc in CSE</h3>
+                    <span class="experience__company">Dhaka International University</span>
+                  </div>
+                  <span class="experience__date">2026</span>
+                </div>
+              </div>
+              <div class="experience__card">
+                <div class="experience__header">
+                  <div>
+                    <h3 class="experience__title">Graphic Design Specialist</h3>
+                    <span class="experience__company">Creative Design BD</span>
+                  </div>
+                  <span class="experience__date">2020 - 2021</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Awards -->
+            <div class="tabs__item" data-content id="awards">
+              <div class="experience__card">
+                <div class="experience__header">
+                  <div>
+                    <h3 class="experience__title">CPC Volunteer Award</h3>
+                    <span class="experience__company">Recognition of Excellence</span>
+                  </div>
+                  <span class="experience__date">2024</span>
+                </div>
+                <ul class="services__list"
+                  style="padding-left: 1rem; font-size: 0.95rem; opacity: 0.8; margin-top: 1rem;">
+                  <li>Recognized for outstanding contribution and leadership within the university programming
+                    community.</li>
+                  <li>Successfully coordinated and managed multiple competitive programming contests and technical
+                    workshops.</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -206,63 +238,42 @@
         digital solutions.
       </p>
       <div class="services__container container grid">
+        <!-- Service 1: Flutter App Development -->
         <div class="services__item">
-          <i class="uil uil-rss-interface services__icon"> </i>
-          <h3 class="services__title">Business Strategy</h3>
+          <i class="uil uil-mobile-android services__icon"></i>
+          <h3 class="services__title">Flutter App Development</h3>
           <p class="services__description">
-            I help businesses develop data-driven strategies to optimize growth, improve efficiency, and stay ahead of
-            the
-            competition.
+            Building production-grade Android & iOS apps with Clean Architecture, efficient state management, and smooth
+            60fps animations.
           </p>
         </div>
 
-        <!--services item 2-->
-
+        <!-- Service 2: Firebase Ecosystem -->
         <div class="services__item">
-          <i class="uil uil-layer-group services__icon"> </i>
-          <h3 class="services__title">Website development</h3>
+          <i class="uil uil-fire services__icon"></i>
+          <h3 class="services__title">Firebase Ecosystem</h3>
           <p class="services__description">
-            I help businesses develop data-driven strategies to optimize growth, improve efficiency, and stay ahead of
-            the
-            competition.
+            Expert implementation of Authentication, Cloud Firestore, Storage, and Cloud Functions for scalable
+            serverless backends.
           </p>
         </div>
 
-        <!--services item 3-->
-
+        <!-- Service 3: Maps & Location -->
         <div class="services__item">
-          <i class="uil uil-users-alt services__icon"> </i>
-          <h3 class="services__title">Marketing & Strategy</h3>
+          <i class="uil uil-map-marker services__icon"></i>
+          <h3 class="services__title">Maps & Location</h3>
           <p class="services__description">
-            I help businesses develop data-driven strategies to optimize growth, improve efficiency, and stay ahead of
-            the
-            competition.
+            integrating Google Maps, geolocation tracking, and geocoding to build powerful location-based services and
+            delivery apps.
           </p>
         </div>
 
-
-
-
-
-        <!--services item 5-->
-
+        <!-- Service 4: APIs & State Management -->
         <div class="services__item">
-          <i class="uil uil-rss-interface services__icon"> </i>
-          <h3 class="services__title">Business Strategy</h3>
+          <i class="uil uil-brackets-curly services__icon"></i>
+          <h3 class="services__title">APIs & State Management</h3>
           <p class="services__description">
-            I help businesses develop data-driven strategies to optimize growth, improve efficiency, and stay ahead of
-            the
-            competition.
-          </p>
-        </div>
-        <!--services item 6-->
-        <div class="services__item">
-          <i class="uil uil-rss-interface services__icon"> </i>
-          <h3 class="services__title">Business Strategy</h3>
-          <p class="services__description">
-            I help businesses develop data-driven strategies to optimize growth, improve efficiency, and stay ahead of
-            the
-            competition.
+            Robust REST API integration, JSON parsing, and advanced state management using Provider, Riverpod, or BLoC.
           </p>
         </div>
 
@@ -283,180 +294,160 @@
       </p>
 
       <div class="portfolio__container container grid">
-
-
-
-        <!--portfolio 1 -->
-
-        <div class="portfolio__item">
-          <img src="assets/img/portfolio-1.png" alt="" class="portfolio__img" />
-
+        <!-- Project 1: Amar Bari -->
+        <div class="portfolio__item" onclick="openAmarBari()">
+          <div class="portfolio__img-box portfolio__img-box--colored portfolio__img-box--amarbari">
+            <img src="assets/img/amar-bari-logo.png" alt="Amar Bari Logo" class="portfolio__logo" />
+          </div>
           <div class="portfolio__data">
-            <p class="portfolio__subtitle">Development</p>
-            <h3 class="portfolio__title">Web design</h3>
-            <p class="portfolio__description">I have completed a few works of web design, keep in touch</p>
+            <p class="portfolio__subtitle">Flutter & Firebase</p>
+            <h3 class="portfolio__title">Amar Bari</h3>
+            <p class="portfolio__description">Advanced rent and tenant management system with automated bookkeeping.</p>
+            <span class="portfolio__button">View Case Study <i class="uil uil-arrow-right"></i></span>
           </div>
         </div>
 
-        <!--portfolio 2 -->
-        <div class="portfolio__item" onclick="openWeatherModal()" style="cursor: pointer;">
-          <img src="assets/img/portfolio-3.jpg" alt="BD Weather App" class="portfolio__img" />
-
+        <!-- Project 2: NBDA -->
+        <div class="portfolio__item" onclick="openNBDA()">
+          <div class="portfolio__img-box portfolio__img-box--colored portfolio__img-box--nbda">
+            <img src="assets/img/nbda-logo.jpg" alt="NBDA Logo" class="portfolio__logo" />
+          </div>
           <div class="portfolio__data">
-            <p class="portfolio__subtitle">App Development</p>
+            <p class="portfolio__subtitle">Emergency Coordination</p>
+            <h3 class="portfolio__title">NBDA App</h3>
+            <p class="portfolio__description">Connecting donors and patients in real-time with emergency response
+              features.</p>
+            <span class="portfolio__button">View Case Study <i class="uil uil-arrow-right"></i></span>
+          </div>
+        </div>
+
+        <!-- Project 3: BD Weather -->
+        <div class="portfolio__item" onclick="openWeatherModal()">
+          <div class="portfolio__img-box">
+            <img src="assets/img/portfolio-3.jpg" alt="BD Weather App" class="portfolio__img" />
+          </div>
+          <div class="portfolio__data">
+            <p class="portfolio__subtitle">Data Intelligence</p>
             <h3 class="portfolio__title">BD Weather App</h3>
-            <p class="portfolio__description">Weather Intelligence Platform</p>
+            <p class="portfolio__description">Visualizing complex meteorological data with interactive map features.</p>
+            <span class="portfolio__button">View Case Study <i class="uil uil-arrow-right"></i></span>
           </div>
         </div>
 
-        <!-- NBDA App Card -->
-        <div class="portfolio__item" onclick="openNBDA()"
-          style="background:linear-gradient(135deg,#8b0000,#ff4d4d); border-radius:16px; padding:20px; cursor:pointer; color:white; box-shadow:0 10px 30px rgba(0,0,0,0.4); display:flex; flex-direction:column; justify-content:space-between; min-height: 220px;">
-          <div>
-            <p style="margin:0;font-size:14px;opacity:0.9;">
-              App Development
-            </p>
-            <h3 style="margin:8px 0 0 0;font-size:22px; color: white;">
-              NBDA
-            </h3>
-            <p style="margin-top:6px;font-size:14px; color: #eee;">
-              Blood Donation Management
-            </p>
+        <!-- Project 4: Web Designs -->
+        <div class="portfolio__item">
+          <div class="portfolio__img-box">
+            <img src="assets/img/portfolio-1.png" alt="Web Design" class="portfolio__img" />
           </div>
-
-          <img src="assets/img/nbda-logo.jpg" alt="NBDA Logo"
-            style="width:70px;height:70px;align-self:flex-end; border-radius: 50%;" />
-        </div>
-
-        <!-- Amar Bari App Card -->
-        <div class="portfolio__item" onclick="openAmarBari()"
-          style="background:linear-gradient(135deg,#0f766e,#22c55e); border-radius:16px; padding:20px; cursor:pointer; color:white; box-shadow:0 10px 30px rgba(0,0,0,0.4); display:flex; flex-direction:column; justify-content:space-between; min-height: 220px;">
-          <div>
-            <p style="margin:0;font-size:14px;opacity:0.9;">
-              App Development
+          <div class="portfolio__data">
+            <p class="portfolio__subtitle">UI/UX Design</p>
+            <h3 class="portfolio__title">Modern Web UI</h3>
+            <p class="portfolio__description">Collection of responsive web interfaces focused on premium accessibility.
             </p>
-            <h3 style="margin:8px 0 0 0;font-size:22px; color: white;">
-              Amar Bari
-            </h3>
-            <p style="margin-top:6px;font-size:14px; color: #eee;">
-              Rent & Tenant Management
-            </p>
+            <span class="portfolio__button">Showcase Coming Soon <i class="uil uil-clock"></i></span>
           </div>
-
-          <img src="assets/img/amar-bari-logo.png" alt="Amar Bari Logo"
-            style="width:70px;height:70px;align-self:flex-end; border-radius: 12px;" />
         </div>
       </div>
 
-      <!-- NBDA Details Section (Converted to Modal) -->
-      <div id="nbdaModal"
-        style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:9999; overflow:auto;">
-        <div
-          style="max-width:900px; margin:60px auto; background:#111; color:#fff; border-radius:20px; padding:30px; position:relative;">
+      <!-- NBDA Modal -->
+      <div id="nbdaModal" class="modal">
+        <div class="modal__container">
+          <i class="uil uil-times modal__close" onclick="closeNBDA()"></i>
 
-          <!-- Close Button -->
-          <span onclick="closeNBDA()" style="position:absolute; top:20px; right:25px; font-size:28px; cursor:pointer;">
-            &times;
-          </span>
-
-          <!-- Title -->
-          <h2 style="margin-top:0; color: #ff4d4d;">
-            NBDA – Blood Donation App
-          </h2>
-
-          <p style="line-height:1.6;color:#ccc; opacity: 0.9;">
-            NBDA is a blood donation management application designed to connect
-            blood donors with patients and hospitals efficiently. The app helps
-            save lives by enabling fast donor discovery and emergency coordination.
+          <h2 class="modal__title">NBDA – Blood Donation</h2>
+          <p class="modal__description">
+            NBDA is a mission-critical application connecting blood donors with patients in real-time.
+            It streamlines the donation lifecycle, ensuring emergency coordination is fast and reliable.
           </p>
 
-          <!-- Feature List -->
-          <h3 style="margin-top:30px;">Key Features</h3>
-
-          <ul style="line-height:1.9; list-style-type: none; padding-left: 0;">
-            <li>Real-time donor search</li>
-            <li>Blood group based filtering</li>
-            <li>Location-based donor filtering</li>
-            <li>Emergency blood request system</li>
-            <li>Direct contact with donors</li>
-          </ul>
-
-          <!-- Tech Stack -->
-          <h3 style="margin-top:30px;">Technology Used</h3>
-
-          <p style="color:#ccc;">
-            Flutter, Firebase Authentication, Cloud Firestore, Firebase Storage
-          </p>
-
-          <!-- Links -->
-          <div style="margin-top:30px;">
-            <a href="#" target="_blank"
-              style="display:inline-block; margin-right:15px; padding:10px 18px; background:#ff5f6d; color:white; text-decoration:none; border-radius:8px;">
-              GitHub
-            </a>
-
-            <a href="nbda-details.html" target="_blank"
-              style="display:inline-block; padding:10px 18px; background:#1abc9c; color:white; text-decoration:none; border-radius:8px;">
-              App Details & Screens
-            </a>
+          <div class="modal__case-study">
+            <div class="modal__case-item">
+              <span class="modal__case-label">The Challenge</span>
+              <p class="stat-text">Ensuring real-time availability and synchronization across unstable networks for
+                life-saving coordination.</p>
+            </div>
+            <div class="modal__case-item">
+              <span class="modal__case-label">The Solution</span>
+              <p class="stat-text">Implemented Firebase Realtime Database with robust offline persistence and background
+                background sync.</p>
+            </div>
           </div>
 
+          <div class="modal__list">
+            <div class="modal__list-item"><i class="uil uil-check-circle modal__icon"></i> <span
+                class="stat-text">Real-time Search</span></div>
+            <div class="modal__list-item"><i class="uil uil-check-circle modal__icon"></i> <span class="stat-text">Smart
+                Filtering</span></div>
+            <div class="modal__list-item"><i class="uil uil-check-circle modal__icon"></i> <span
+                class="stat-text">Emergency Alerts</span></div>
+          </div>
+
+          <div class="modal__footer">
+            <a href="https://github.com/raseldev007" target="_blank" class="button">GitHub Source</a>
+            <a href="nbda-details.html" target="_blank" class="button button--ghost">View All Screens</a>
+          </div>
         </div>
-      </div> <!--portfolio 4 -->
+      </div>
 
       <!-- Amar Bari Modal -->
-      <div id="amarBariModal"
-        style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:9999; overflow:auto;">
-        <div
-          style="max-width:900px; margin:60px auto; background:#111; color:#fff; border-radius:20px; padding:30px; position:relative;">
+      <div id="amarBariModal" class="modal">
+        <div class="modal__container">
+          <i class="uil uil-times modal__close" onclick="closeAmarBari()"></i>
 
-          <!-- Close Button -->
-          <span onclick="closeAmarBari()"
-            style="position:absolute; top:20px; right:25px; font-size:28px; cursor:pointer;">
-            &times;
-          </span>
-
-          <!-- Title -->
-          <h2 style="margin-top:0; color: #22c55e;">
-            Amar Bari – Rent Manager
-          </h2>
-
-          <p style="line-height:1.6;color:#ccc; opacity: 0.9;">
-            Amar Bari is a Bangladesh-focused rent and tenant management mobile application
-            designed to digitize house rent collection, utility billing, and tenant record management.
+          <h2 class="modal__title">Amar Bari – Rent Manager</h2>
+          <p class="modal__description">
+            A comprehensive ecosystem for landlords and tenants to manage properties, payments, and
+            maintenance requests seamlessly.
           </p>
 
-          <!-- Feature List -->
-          <h3 style="margin-top:30px;">Key Features</h3>
-
-          <ul style="line-height:1.9; list-style-type: none; padding-left: 0;">
-            <li>Owner & Tenant role-based system</li>
-            <li>Digital rent collection (bKash/Nagad)</li>
-            <li>Automated monthly rent reminders</li>
-            <li>Tenant document storage (NID/Photo)</li>
-            <li>Utility bill tracking & PDF receipts</li>
-          </ul>
-
-          <!-- Tech Stack -->
-          <h3 style="margin-top:30px;">Technology Used</h3>
-
-          <p style="color:#ccc;">
-            Flutter, Firebase Auth, Cloud Firestore, Cloud Functions
-          </p>
-
-          <!-- Links -->
-          <div style="margin-top:30px;">
-            <a href="#" target="_blank"
-              style="display:inline-block; margin-right:15px; padding:10px 18px; background:#ff5f6d; color:white; text-decoration:none; border-radius:8px;">
-              GitHub
-            </a>
-
-            <a href="amar-bari-details.html" target="_blank"
-              style="display:inline-block; padding:10px 18px; background:#1abc9c; color:white; text-decoration:none; border-radius:8px;">
-              App Details & Screens
-            </a>
+          <div class="modal__case-study">
+            <div class="modal__case-item">
+              <span class="modal__case-label">Key Outcome</span>
+              <p class="stat-text">Automated 90% of monthly bookkeeping tasks for property owners through smart ledger
+                integration.</p>
+            </div>
           </div>
 
+          <div class="modal__list">
+            <div class="modal__list-item"><i class="uil uil-check-circle modal__icon"></i> <span
+                class="stat-text">Automated Billing</span></div>
+            <div class="modal__list-item"><i class="uil uil-check-circle modal__icon"></i> <span
+                class="stat-text">Tenant Portals</span></div>
+            <div class="modal__list-item"><i class="uil uil-check-circle modal__icon"></i> <span
+                class="stat-text">Payment Tracking</span></div>
+          </div>
+
+          <div class="modal__footer">
+            <a href="https://github.com/raseldev007" target="_blank" class="button">Project Repository</a>
+            <a href="amar-bari-details.html" target="_blank" class="button button--ghost">App Mockups</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Weather Modal -->
+      <div id="weatherModal" class="modal">
+        <div class="modal__container">
+          <i class="uil uil-times modal__close" onclick="closeWeatherModal()"></i>
+
+          <h2 class="modal__title">BD Weather App</h2>
+          <p class="modal__description">
+            Visualizing meteorological shifts across Bangladesh with precision.
+            Developed to provide farmers and travelers with hyper-local forecasts.
+          </p>
+
+          <div class="modal__list">
+            <div class="modal__list-item"><i class="uil uil-check-circle modal__icon"></i> <span class="stat-text">Live
+                Forecasts</span></div>
+            <div class="modal__list-item"><i class="uil uil-check-circle modal__icon"></i> <span
+                class="stat-text">Visual Charts</span></div>
+            <div class="modal__list-item"><i class="uil uil-check-circle modal__icon"></i> <span class="stat-text">Map
+                Integration</span></div>
+          </div>
+
+          <div class="modal__footer">
+            <a href="https://github.com/raseldev007/bd-weather-app" target="_blank" class="button">Code Exploration</a>
+            <a href="weather-details.html" target="_blank" class="button button--ghost">Interactive Demo</a>
+          </div>
         </div>
       </div>
 
@@ -469,71 +460,76 @@
     <section class="contact section" id="contact">
       <div class="contact__container container grid">
         <div class="contact__content">
-          <h2 class="section__title">Hire Me</h2>
+          <h2 class="section__title" style="text-align: left; margin-inline: 0;">Let's Connect</h2>
           <p class="contact__description">
-            I am availabe for freelance work. Connect via phone:
-            <a href="tel:01781474833">01569150874</a> or email:
-            <a href="mailto:raselofficial89@gmail.com">raselofficial89@gmail.com</a>
+            I’m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
           </p>
 
-          <form class="contact_form" id="contact-form">
-            <div class="contact__form-input">
-              <input type="text" name="name" placeholder="Your name *" class="contact__input" id="contact-name" />
+          <div class="contact__info">
+            <div class="contact__info-card">
+              <i class="uil uil-envelope contact__icon"></i>
+              <div>
+                <h3 class="stat-text" style="font-weight: 700; color: var(--title-color);">Email Me</h3>
+                <a href="mailto:raselofficial89@gmail.com" class="stat-text">raselofficial89@gmail.com</a>
+              </div>
             </div>
 
-            <div class="contact__form-input">
-              <input type="email" name="email" placeholder="Your email *" class="contact__input" id="contact-email" />
+            <div class="contact__info-card">
+              <i class="uil uil-phone contact__icon"></i>
+              <div>
+                <h3 class="stat-text" style="font-weight: 700; color: var(--title-color);">Call Me</h3>
+                <a href="tel:01569150874" class="stat-text">+880 1569-150874</a>
+              </div>
             </div>
-
-            <div class="contact__form-input">
-              <input type="text" name="Subject" placeholder="Write a Subject" class="contact__input"
-                id="contact-subject" />
-            </div>
-
-            <div class="contact__form-input">
-              <textarea name="message" id="contact-message" class="contact__input textarea" placeholder="Your Message">
-            </textarea>
-            </div>
-
-            <input type="submit" value="Submit" class="btn" />
-            <p class="error__message" id="error-message"></p>
-
-          </form>
+          </div>
         </div>
 
-        <img src="assets/img/contact.avif" alt="" class="contact__img">
+        <form class="contact__form" id="contact-form">
+          <div class="contact__inputs">
+            <div class="contact__input-box">
+              <input type="text" name="name" placeholder="Name" class="contact__input" id="contact-name" required />
+            </div>
+            <div class="contact__input-box">
+              <input type="email" name="email" placeholder="Email" class="contact__input" id="contact-email" required />
+            </div>
+          </div>
 
+          <div class="contact__input-box" style="margin-bottom: 1.5rem;">
+            <input type="text" name="Subject" placeholder="Subject" class="contact__input" id="contact-subject" />
+          </div>
+
+          <div class="contact__input-box" style="margin-bottom: 2rem;">
+            <textarea name="message" id="contact-message" class="contact__input textarea"
+              placeholder="Project Details..."></textarea>
+          </div>
+
+          <button type="submit" class="button" style="width: 100%; justify-content: center;">
+            Send Message <i class="uil uil-message button__icon"></i>
+          </button>
+          <p class="error__message" id="error-message" style="margin-top: 1rem;"></p>
+        </form>
       </div>
     </section>
 
     <!--Footer-->
     <footer class="footer">
-      <div class="footer__container container grid">
-        <a href="index.html" class="footer__logo">Social<span>Media</span> →</a>
+      <div class="footer__container container">
+        <div class="footer__content">
+          <a href="#" class="footer__logo">RASEL<span>.DEV</span></a>
+          <p class="footer__copy">&copy; 2026 Rasel.Dev All rights reserved.</p>
+        </div>
+
         <div class="footer__socials">
-          <a href="https://www.facebook.com/rafiulislamrasel.007" target="_blank" class="footer__social-link">
-            <i class="uil uil-facebook-f"></i>
-          </a>
-
-          <a href="https://x.com/?lang=en" target="_blank" class="footer__social-link">
-            <i class="uil uil-twitter"></i>
-          </a>
-
-          <a href="https://www.linkedin.com" target="_blank" class="footer__social-link">
+          <a href="https://www.linkedin.com/in/rafiulislamrasel/" target="_blank" class="footer__social-link">
             <i class="uil uil-linkedin"></i>
           </a>
-
-          <a href="https://www.instagram.com/_rasel_007/" target="_blank" class="footer__social-link">
-            <i class="uil uil-instagram"></i>
-          </a>
-
           <a href="https://github.com/raseldev007" target="_blank" class="footer__social-link">
             <i class="uil uil-github"></i>
           </a>
+          <a href="https://www.facebook.com/rafiulislamrasel.007" target="_blank" class="footer__social-link">
+            <i class="uil uil-facebook-f"></i>
+          </a>
         </div>
-
-        <p class="footer__copyright">&copy; 2025. All rights reserved.</p>
-
       </div>
     </footer>
 
@@ -560,61 +556,7 @@
     })();
   </script>
 
-  <!--Modal for BD Weather App-->
-  <div id="weatherModal"
-    style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:9999; overflow:auto;">
-    <div
-      style="max-width:900px; margin:60px auto; background:#111; color:#fff; border-radius:20px; padding:30px; position:relative;">
 
-      <!-- Close Button -->
-      <span onclick="closeWeatherModal()"
-        style="position:absolute; top:20px; right:25px; font-size:28px; cursor:pointer;">
-        &times;
-      </span>
-
-      <!-- Title -->
-      <h2 style="margin-top:0;color:#ff5f6d;">
-        BD Weather App
-      </h2>
-
-      <!-- Overview -->
-      <p style="line-height:1.7;opacity:0.9;">
-        BD Weather App is a real-time weather intelligence application focused on Bangladesh.
-        It provides accurate forecasts, live temperature, humidity, wind speed, and weather alerts
-        using modern APIs and clean UI.
-      </p>
-
-      <!-- Features -->
-      <h3 style="margin-top:30px;">Key Features</h3>
-      <ul style="line-height:1.9;">
-        <li>Real-time weather data</li>
-        <li>City-based search (Bangladesh focused)</li>
-        <li>Temperature, humidity, wind & pressure</li>
-        <li>7-day weather forecast</li>
-        <li>Minimal and fast UI</li>
-      </ul>
-
-      <!-- Tech Stack -->
-      <h3 style="margin-top:30px;">Tech Stack</h3>
-      <p>
-        HTML, CSS, JavaScript, Weather API
-      </p>
-
-      <!-- Links -->
-      <div style="margin-top:30px;">
-        <a href="https://github.com/raseldev007/bd-weather-app" target="_blank"
-          style="display:inline-block; margin-right:15px; padding:10px 18px; background:#ff5f6d; color:white; text-decoration:none; border-radius:8px;">
-          GitHub
-        </a>
-
-        <a href="weather-details.html" target="_blank"
-          style="display:inline-block; padding:10px 18px; background:#1abc9c; color:white; text-decoration:none; border-radius:8px;">
-          App Details & Screens
-        </a>
-      </div>
-
-    </div>
-  </div>
 
   <!--Main JS-->
 

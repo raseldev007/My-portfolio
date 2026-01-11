@@ -11,145 +11,79 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <title>BD Weather App - Details</title>
-    <style>
-        .details__container {
-            padding-top: 7rem;
-            max-width: 968px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .details__header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .details__img-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 3rem;
-        }
-
-        .details__img {
-            width: 100%;
-            border-radius: 1rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s;
-            cursor: pointer;
-        }
-
-        .details__img:hover {
-            transform: scale(1.02);
-        }
-
-        .details__info {
-            background-color: var(--container-color);
-            padding: 2.5rem;
-            border-radius: 1.5rem;
-            margin-bottom: 3rem;
-        }
-
-        .details__back {
-            display: inline-flex;
-            align-items: center;
-            column-gap: 0.5rem;
-            color: var(--first-color);
-            font-weight: var(--weight-500);
-            margin-bottom: 2rem;
-        }
-
-        .tech-tag {
-            display: inline-block;
-            padding: 0.5rem 1rem;
-            background-color: var(--body-color);
-            border-radius: 0.5rem;
-            font-size: var(--smaller-font-size);
-            margin-right: 0.5rem;
-            margin-bottom: 0.5rem;
-        }
-    </style>
+    <title>BD Weather - Project Details</title>
 </head>
 
 <body>
-
-    <header class="header" id="header">
+    <header class="header scroll-header" id="header">
         <nav class="nav container">
-            <a href="index.html" class="nav__logo"><span>Dev</span>007</a>
+            <a href="index.html" class="nav__logo">RASEL<span>.DEV</span></a>
             <div class="nav__menu">
                 <ul class="nav__list">
-                    <li><a href="index.html#portfolio" class="nav__link">Back to Portfolio</a></li>
+                    <li><a href="index.html#portfolio" class="nav__link active-link">Back to Portfolio</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <main class="main">
+    <main class="main" style="padding-top: 4rem;">
         <section class="details section">
             <div class="details__container container">
 
-                <a href="index.html#portfolio" class="details__back">
-                    <i class="uil uil-arrow-left"></i> Back to Home
-                </a>
-
-                <div class="details__header">
-                    <h1 class="section__title">BD Weather App</h1>
-                    <span class="section__subtitle">Weather Intelligence Platform</span>
+                <div class="details__header" style="text-align: center; margin-bottom: 4rem;">
+                    <span class="home__subtitle">Case Study</span>
+                    <h1 class="home__title">BD Weather</h1>
+                    <p class="home__description" style="max-width: 700px; margin-inline: auto;">
+                        A real-time weather intelligence platform providing hyper-local forecasts and atmospheric
+                        insights for Bangladesh.
+                    </p>
                 </div>
 
                 <!-- Screenshots Gallery -->
-                <div class="details__img-gallery">
-                    <img src="assets/img/bd-weather-1.png" alt="Home Screen" class="details__img">
-                    <img src="assets/img/bd-weather-2.png" alt="Forecast Details" class="details__img">
-                    <img src="assets/img/bd-weather-3.png" alt="7-Day Forecast" class="details__img">
-                    <img src="assets/img/bd-weather-4.png" alt="Alert Center" class="details__img">
-                    <img src="assets/img/bd-weather-5.png" alt="Cyclone Warning" class="details__img">
-                    <img src="assets/img/bd-weather-6.png" alt="Settings & Profile" class="details__img">
+                <div class="services__container grid"
+                    style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 5rem;">
+                    <img src="assets/img/bd-weather-1.png" alt="Screen" class="portfolio__img"
+                        style="border-radius: var(--radius-md); border: 1px solid var(--glass-border);">
+                    <img src="assets/img/bd-weather-2.png" alt="Screen" class="portfolio__img"
+                        style="border-radius: var(--radius-md); border: 1px solid var(--glass-border);">
+                    <img src="assets/img/bd-weather-3.png" alt="Screen" class="portfolio__img"
+                        style="border-radius: var(--radius-md); border: 1px solid var(--glass-border);">
+                    <img src="assets/img/bd-weather-4.png" alt="Screen" class="portfolio__img"
+                        style="border-radius: var(--radius-md); border: 1px solid var(--glass-border);">
+                    <img src="assets/img/bd-weather-5.png" alt="Screen" class="portfolio__img"
+                        style="border-radius: var(--radius-md); border: 1px solid var(--glass-border);">
+                    <img src="assets/img/bd-weather-6.png" alt="Screen" class="portfolio__img"
+                        style="border-radius: var(--radius-md); border: 1px solid var(--glass-border);">
                 </div>
 
-                <div class="details__info">
-                    <h3 class="services__title">Project Overview</h3>
-                    <p class="services__description" style="margin-bottom: 2rem;">
-                        BD Weather App is the ultimate weather companion for users in Bangladesh.
-                        Designed with a focus on locality, it delivers hyper-local forecasts, real-time alerts,
-                        and detailed atmospheric data. Whether you are a traveler, farmer, or daily commuter,
-                        this app ensures you are always prepared for the elements.
+                <div class="experience__card" style="margin-bottom: 3rem; padding: 3rem;">
+                    <h3 class="portfolio__title">Technical Intelligence</h3>
+                    <p class="portfolio__description" style="margin-bottom: 2rem;">
+                        BD Weather App delivers hyper-local forecasts, real-time alerts, and detailed atmospheric data
+                        using advanced API orchestration and heavy-duty data visualization.
                     </p>
 
-                    <h3 class="services__title">Key Features</h3>
-                    <ul class="services__modal-services grid">
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__icon"></i>
-                            <p>Real-time temperature and humidity tracking</p>
-                        </li>
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__icon"></i>
-                            <p>7-Day Forecast with rain probability</p>
-                        </li>
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__icon"></i>
-                            <p>Location-based automated detection</p>
-                        </li>
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__icon"></i>
-                            <p>Severe weather alerts for storms and cyclones</p>
-                        </li>
-                    </ul>
+                    <div class="modal__list" style="margin-bottom: 3rem;">
+                        <div class="modal__list-item"><i class="uil uil-check-circle modal__icon"></i> <span
+                                class="stat-text">Real-time Tracking</span></div>
+                        <div class="modal__list-item"><i class="uil uil-check-circle modal__icon"></i> <span
+                                class="stat-text">7-Day Forecast</span></div>
+                        <div class="modal__list-item"><i class="uil uil-check-circle modal__icon"></i> <span
+                                class="stat-text">Location Intelligence</span></div>
+                        <div class="modal__list-item"><i class="uil uil-check-circle modal__icon"></i> <span
+                                class="stat-text">Severe Alerts</span></div>
+                    </div>
 
-                    <div style="margin-top: 2rem;">
-                        <h3 class="services__title">Technology Stack</h3>
-                        <div style="margin-top: 1rem;">
-                            <span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">Dart</span>
-                            <span class="tech-tag">OpenWeather API</span>
-                            <span class="tech-tag">Google Maps API</span>
-                        </div>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <span class="stat-card" style="padding: 0.5rem 1rem; flex: none;">Flutter</span>
+                        <span class="stat-card" style="padding: 0.5rem 1rem; flex: none;">Dart</span>
+                        <span class="stat-card" style="padding: 0.5rem 1rem; flex: none;">OpenWeather API</span>
+                        <span class="stat-card" style="padding: 0.5rem 1rem; flex: none;">G-Maps</span>
                     </div>
                 </div>
 
-                <div style="text-align: center;">
-                    <a href="https://github.com/raseldev007/bd-weather-app" target="_blank" class="btn btn-flex">
+                <div style="text-align: center; margin-bottom: 5rem;">
+                    <a href="https://github.com/raseldev007/bd-weather-app" target="_blank" class="button">
                         View Source Code <i class="uil uil-github-alt" style="margin-left: 0.5rem;"></i>
                     </a>
                 </div>
@@ -159,18 +93,14 @@
     </main>
 
     <footer class="footer">
-        <div class="footer__bg">
-            <div class="footer__container container grid">
-                <div>
-                    <h1 class="footer__title">Dev007</h1>
-                    <span class="footer__subtitle">App Developer</span>
-                </div>
-                <p class="footer__copyright">&copy; 2025. All rights reserved.</p>
+        <div class="footer__container container">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">RASEL<span>.DEV</span></a>
+                <p class="footer__copy">&copy; 2026 Rasel.Dev All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Main JS -->
     <script src="assets/js/main.js"></script>
 </body>
 

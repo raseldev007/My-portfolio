@@ -11,170 +11,80 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <title>Amar Bari - Rent & Tenant Management Details</title>
-    <style>
-        .details__container {
-            padding-top: 7rem;
-            max-width: 968px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .details__header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-
-        .details__img-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1.5rem;
-            margin-bottom: 3rem;
-        }
-
-        .details__img {
-            width: 100%;
-            border-radius: 1rem;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s;
-            cursor: pointer;
-        }
-
-        .details__img:hover {
-            transform: scale(1.02);
-        }
-
-        .details__info {
-            background-color: var(--container-color);
-            padding: 2.5rem;
-            border-radius: 1.5rem;
-            margin-bottom: 3rem;
-        }
-
-        .details__back {
-            display: inline-flex;
-            align-items: center;
-            column-gap: 0.5rem;
-            color: var(--first-color);
-            font-weight: var(--weight-500);
-            margin-bottom: 2rem;
-        }
-
-        .tech-tag {
-            display: inline-block;
-            padding: 0.5rem 1rem;
-            background-color: var(--body-color);
-            border-radius: 0.5rem;
-            font-size: var(--smaller-font-size);
-            margin-right: 0.5rem;
-            margin-bottom: 0.5rem;
-        }
-    </style>
+    <title>Amar Bari - Project Details</title>
 </head>
 
 <body>
-
-    <header class="header" id="header">
+    <header class="header scroll-header" id="header">
         <nav class="nav container">
-            <a href="index.html" class="nav__logo"><span>Dev</span>007</a>
+            <a href="index.html" class="nav__logo">RASEL<span>.DEV</span></a>
             <div class="nav__menu">
                 <ul class="nav__list">
-                    <li><a href="index.html#portfolio" class="nav__link">Back to Portfolio</a></li>
+                    <li><a href="index.html#portfolio" class="nav__link active-link">Back to Portfolio</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
-    <main class="main">
+    <main class="main" style="padding-top: 4rem;">
         <section class="details section">
             <div class="details__container container">
 
-                <a href="index.html#portfolio" class="details__back">
-                    <i class="uil uil-arrow-left"></i> Back to Home
-                </a>
-
-                <div class="details__header">
-                    <h1 class="section__title">Amar Bari</h1>
-                    <span class="section__subtitle">Rent & Tenant Management System</span>
+                <div class="details__header" style="text-align: center; margin-bottom: 4rem;">
+                    <span class="home__subtitle">Case Study</span>
+                    <h1 class="home__title">Amar Bari</h1>
+                    <p class="home__description" style="max-width: 700px; margin-inline: auto;">
+                        A comprehensive property management ecosystem designed to digitize the rental lifecycle for
+                        landlords and tenants.
+                    </p>
                 </div>
 
                 <!-- Screenshots Gallery -->
-                <div class="details__img-gallery">
-                    <img src="assets/img/amar-bari-1.png" alt="Owner Dashboard" class="details__img">
-                    <img src="assets/img/amar-bari-4.png" alt="My Properties" class="details__img">
-                    <img src="assets/img/amar-bari-5.png" alt="Unpaid Residents" class="details__img">
-
-                    <!-- Management & Admin Screens -->
-                    <img src="assets/img/amar-bari-6.png" alt="Collected Payments History" class="details__img">
-                    <img src="assets/img/amar-bari-7.png" alt="Resident Profile Details" class="details__img">
-                    <img src="assets/img/amar-bari-8.png" alt="Flat Status Overview" class="details__img">
-                    <img src="assets/img/amar-bari-9.png" alt="Flat Invoice & Details" class="details__img">
-                    <img src="assets/img/amar-bari-10.png" alt="Support Ticket System" class="details__img">
+                <div class="services__container grid"
+                    style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin-bottom: 5rem;">
+                    <img src="assets/img/amar-bari-1.png" alt="Screen" class="portfolio__img"
+                        style="border-radius: var(--radius-md); border: 1px solid var(--glass-border);">
+                    <img src="assets/img/amar-bari-4.png" alt="Screen" class="portfolio__img"
+                        style="border-radius: var(--radius-md); border: 1px solid var(--glass-border);">
+                    <img src="assets/img/amar-bari-5.png" alt="Screen" class="portfolio__img"
+                        style="border-radius: var(--radius-md); border: 1px solid var(--glass-border);">
+                    <img src="assets/img/amar-bari-6.png" alt="Screen" class="portfolio__img"
+                        style="border-radius: var(--radius-md); border: 1px solid var(--glass-border);">
+                    <img src="assets/img/amar-bari-7.png" alt="Screen" class="portfolio__img"
+                        style="border-radius: var(--radius-md); border: 1px solid var(--glass-border);">
+                    <img src="assets/img/amar-bari-8.png" alt="Screen" class="portfolio__img"
+                        style="border-radius: var(--radius-md); border: 1px solid var(--glass-border);">
                 </div>
 
-                <div class="details__info">
-                    <h3 class="services__title">Project Overview</h3>
-                    <p class="services__description" style="margin-bottom: 2rem;">
-                        Amar Bari is a comprehensive solution for landlords and tenants in Bangladesh.
-                        It digitizes the entire rental lifecycle, from tenant onboarding to monthly rent collection.
-                        With features like automated reminders and digital receipt generation, it brings transparency
-                        and ease to property management.
+                <div class="experience__card" style="margin-bottom: 3rem; padding: 3rem;">
+                    <h3 class="portfolio__title">Technical Ecosystem</h3>
+                    <p class="portfolio__description" style="margin-bottom: 2rem;">
+                        Amar Bari digitizes the entire rental lifecycle, from tenant onboarding to monthly rent
+                        collection. With features like automated reminders and digital receipt generation, it brings
+                        transparency and ease to property management.
                     </p>
 
-                    <h3 class="services__title">Key Features</h3>
-                    <ul class="services__modal-services grid">
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__icon"></i>
-                            <p>Role-based Access (Owner/Tenant)</p>
-                        </li>
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__icon"></i>
-                            <p>Digital Rent Collection & Receipts</p>
-                        </li>
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__icon"></i>
-                            <p>Tenant Document Cloud Storage</p>
-                        </li>
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__icon"></i>
-                            <p>Utility Bill Management</p>
-                        </li>
-                    </ul>
+                    <div class="modal__list" style="margin-bottom: 3rem;">
+                        <div class="modal__list-item"><i class="uil uil-check-circle modal__icon"></i> <span
+                                class="stat-text">Role-based Access</span></div>
+                        <div class="modal__list-item"><i class="uil uil-check-circle modal__icon"></i> <span
+                                class="stat-text">Digital Rent Collection</span></div>
+                        <div class="modal__list-item"><i class="uil uil-check-circle modal__icon"></i> <span
+                                class="stat-text">Tenant Cloud Storage</span></div>
+                        <div class="modal__list-item"><i class="uil uil-check-circle modal__icon"></i> <span
+                                class="stat-text">Utility Management</span></div>
+                    </div>
 
-                    <h3 class="services__title" style="margin-top: 2rem;">Advanced Management Tools</h3>
-                    <ul class="services__modal-services grid">
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__icon"></i>
-                            <p>One-Tap Flat Status (Occupied/Vacant)</p>
-                        </li>
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__icon"></i>
-                            <p>Automated Invoice Generation</p>
-                        </li>
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__icon"></i>
-                            <p>In-App Support Ticket System</p>
-                        </li>
-                        <li class="services__modal-service">
-                            <i class="uil uil-check-circle services__icon"></i>
-                            <p>Detailed Payment History Logs</p>
-                        </li>
-                    </ul>
-
-                    <div style="margin-top: 2rem;">
-                        <h3 class="services__title">Technology Stack</h3>
-                        <div style="margin-top: 1rem;">
-                            <span class="tech-tag">Flutter</span>
-                            <span class="tech-tag">Firebase Auth</span>
-                            <span class="tech-tag">Firestore</span>
-                            <span class="tech-tag">Cloud Functions</span>
-                        </div>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <span class="stat-card" style="padding: 0.5rem 1rem; flex: none;">Flutter</span>
+                        <span class="stat-card" style="padding: 0.5rem 1rem; flex: none;">Firebase</span>
+                        <span class="stat-card" style="padding: 0.5rem 1rem; flex: none;">Realtime Sync</span>
                     </div>
                 </div>
 
-                <div style="text-align: center;">
-                    <a href="#" target="_blank" class="btn btn-flex">
-                        View Source Code <i class="uil uil-github-alt" style="margin-left: 0.5rem;"></i>
+                <div style="text-align: center; margin-bottom: 5rem;">
+                    <a href="https://github.com/raseldev007" target="_blank" class="button">
+                        View Repository <i class="uil uil-github-alt" style="margin-left: 0.5rem;"></i>
                     </a>
                 </div>
 
@@ -183,18 +93,14 @@
     </main>
 
     <footer class="footer">
-        <div class="footer__bg">
-            <div class="footer__container container grid">
-                <div>
-                    <h1 class="footer__title">Dev007</h1>
-                    <span class="footer__subtitle">App Developer</span>
-                </div>
-                <p class="footer__copyright">&copy; 2025. All rights reserved.</p>
+        <div class="footer__container container">
+            <div class="footer__content">
+                <a href="#" class="footer__logo">RASEL<span>.DEV</span></a>
+                <p class="footer__copy">&copy; 2026 Rasel.Dev All rights reserved.</p>
             </div>
         </div>
     </footer>
 
-    <!-- Main JS -->
     <script src="assets/js/main.js"></script>
 </body>
 
