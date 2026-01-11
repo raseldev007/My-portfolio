@@ -125,22 +125,24 @@
           <div class="tabs__content">
             <!-- Skills -->
             <div class="tabs__item tab__active" data-content id="skills">
-              <div class="tabs__skills-grid">
-                <div class="stat-card">
-                  <i class="uil uil-mobile-android stat-icon"></i>
-                  <span class="stat-text">Flutter SDK</span>
+              <div class="tabs__data" style="grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));">
+                <div class="stat-card" style="padding: 1rem; text-align: center;">
+                  <i class="uil uil-mobile-android" style="font-size: 2rem; color: var(--first-color);"></i>
+                  <span class="stat-text" style="display: block; margin-top: 0.5rem; font-weight: 600;">Flutter
+                    SDK</span>
                 </div>
-                <div class="stat-card">
-                  <i class="uil uil-fire stat-icon"></i>
-                  <span class="stat-text">Firebase</span>
+                <div class="stat-card" style="padding: 1rem; text-align: center;">
+                  <i class="uil uil-fire" style="font-size: 2rem; color: var(--first-color);"></i>
+                  <span class="stat-text" style="display: block; margin-top: 0.5rem; font-weight: 600;">Firebase</span>
                 </div>
-                <div class="stat-card">
-                  <i class="uil uil-brackets-curly stat-icon"></i>
-                  <span class="stat-text">Dart & JS</span>
+                <div class="stat-card" style="padding: 1rem; text-align: center;">
+                  <i class="uil uil-brackets-curly" style="font-size: 2rem; color: var(--first-color);"></i>
+                  <span class="stat-text" style="display: block; margin-top: 0.5rem; font-weight: 600;">Dart & JS</span>
                 </div>
-                <div class="stat-card">
-                  <i class="uil uil-layer-group stat-icon"></i>
-                  <span class="stat-text">Clean Arch</span>
+                <div class="stat-card" style="padding: 1rem; text-align: center;">
+                  <i class="uil uil-layer-group" style="font-size: 2rem; color: var(--first-color);"></i>
+                  <span class="stat-text" style="display: block; margin-top: 0.5rem; font-weight: 600;">Clean
+                    Arch</span>
                 </div>
               </div>
             </div>
@@ -227,14 +229,16 @@
     <!--Services, Portfolio Highlight Scetion-->
 
     <section class="services section" id="services">
-      <h2 class="section__title"> Portfolio Highlights </h2>
-      <p class="section__description">
-        A showcase of my best work, featuring projects that reflect my skills, creativity, and dedication. From
-        innovative
-        app development to sleek front-end(UI-UX) designs, each project highlights my expertise in delivering
-        high-quality
-        digital solutions.
-      </p>
+      <div class="container">
+        <h2 class="section__title"> Portfolio Highlights </h2>
+        <p class="section__description">
+          A showcase of my best work, featuring projects that reflect my skills, creativity, and dedication. From
+          innovative
+          app development to sleek front-end(UI-UX) designs, each project highlights my expertise in delivering
+          high-quality
+          digital solutions.
+        </p>
+      </div>
       <div class="services__container container grid">
         <!-- Service 1: Flutter App Development -->
         <div class="services__item">
@@ -281,15 +285,17 @@
     <!--Portfolio Section-->
 
     <section class="services section" id="portfolio">
-      <h2 class="section__title"> My Workspaces</h2>
-      <p class="section__description">
-        I am a passionate app developer from Bangladesh, specializing in creating high-quality, user-friendly
-        applications. With expertise in modern technologies, I craft seamless digital experiences tailored to client
-        needs. My portfolio showcases diverse projects, from innovative startups to enterprise solutions. I prioritize
-        clean code, efficiency, and intuitive design to deliver top-notch applications. Constantly evolving with
-        industry trends, I aim to transform ideas into impactful digital solutions. Let’s collaborate to bring your
-        vision to life with excellence and creativity!
-      </p>
+      <div class="container">
+        <h2 class="section__title"> My Workspaces</h2>
+        <p class="section__description">
+          I am a passionate app developer from Bangladesh, specializing in creating high-quality, user-friendly
+          applications. With expertise in modern technologies, I craft seamless digital experiences tailored to client
+          needs. My portfolio showcases diverse projects, from innovative startups to enterprise solutions. I prioritize
+          clean code, efficiency, and intuitive design to deliver top-notch applications. Constantly evolving with
+          industry trends, I aim to transform ideas into impactful digital solutions. Let’s collaborate to bring your
+          vision to life with excellence and creativity!
+        </p>
+      </div>
 
       <div class="portfolio__container container grid">
         <!-- Project 1: Amar Bari -->
@@ -458,8 +464,9 @@
     <section class="contact section" id="contact">
       <div class="contact__container container grid">
         <div class="contact__content">
-          <h2 class="section__title" style="text-align: left; margin-inline: 0;">Let's Connect</h2>
-          <p class="contact__description">
+          <h2 class="section__title">Let's Connect</h2>
+          <p class="contact__description section__description"
+            style="max-width: 100%; margin-bottom: 2rem; text-align: justify;">
             I’m always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
           </p>
 
