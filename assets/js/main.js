@@ -191,7 +191,7 @@ class NeuralBackground {
 
     createParticles() {
         this.particles = [];
-        const count = 40;
+        const count = window.innerWidth < 768 ? 20 : 40;
         for (let i = 0; i < count; i++) {
             this.particles.push({
                 x: Math.random() * this.width,
