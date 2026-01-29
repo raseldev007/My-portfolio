@@ -1011,62 +1011,56 @@ textarea:focus-visible {
 
 .footer__socials {
   display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 1.5rem;
 }
 
 .footer__social-link {
-  font-size: 1.5rem;
-  color: var(--text-color);
-  transition: var(--transition);
-}
-
-.footer__social-link:hover {
-  color: var(--first-color);
-  transform: translateY(-5px);
-}
-
-.footer__copy {
-  font-size: var(--smaller-font-size);
-  color: var(--text-color);
-  opacity: 0.6;
-}
-
-
-.footer__logo {
-  color: var(--title-color);
-  font-size: 2.5rem;
-  font-weight: var(--weight-700);
-}
-
-.footer__logo span {
-  color: var(--first-color);
-}
-
-.footer__socials {
   display: flex;
   justify-content: center;
   align-items: center;
-  column-gap: 0.75rem;
-}
-
-.footer__social-link {
-  display: flex;
-  /* Ensures they stay inline inside the flex container */
-  justify-content: center;
-  align-items: center;
   color: var(--text-color);
-  font-size: var(--small-font-size);
-  border: 2px solid var(--text-color);
+  font-size: 1.25rem;
   width: 46px;
   height: 46px;
   border-radius: 50%;
-  transition: all 0.3s var(--transition);
+  border: 2px solid var(--border-color);
+  /* More subtle border initially */
+  background-color: var(--container-color);
+  transition: all 0.4s var(--transition);
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
 }
-
 
 .footer__social-link:hover {
   background-color: var(--first-color);
   border-color: var(--first-color);
+  color: #fff;
+  /* Fix: Ensure icon is visible against blue bg */
+  transform: translateY(-5px);
+  box-shadow: 0 8px 24px hsla(210, 100%, 75%, 0.4);
+  /* Premium Glow */
+}
+
+/* Optional: Shine effect on hover */
+.footer__social-link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.1);
+  transform: scale(0);
+  border-radius: 50%;
+  transition: transform 0.4s ease;
+  z-index: -1;
+}
+
+.footer__social-link:hover::before {
+  transform: scale(1.5);
 }
 
 /*=============== SCROLL UP ===============*/
