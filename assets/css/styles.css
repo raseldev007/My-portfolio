@@ -149,6 +149,22 @@ input {
   outline: none;
 }
 
+/* Accessibility: Focus Indicators */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 2px solid var(--first-color);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+/* Premium Selection Style */
+::selection {
+  background-color: var(--first-color);
+  color: #fff;
+}
+
 /*=============== REUSABLE CSS CLASSES ===============*/
 
 .container {
@@ -795,7 +811,7 @@ input {
 .portfolio__item:hover {
   transform: translateY(-10px);
   border-color: var(--first-color);
-  box-shadow: var(--shadow);
+  box-shadow: 0 12px 32px hsla(210, 100%, 75%, 0.15);
 }
 
 .portfolio__img-box {

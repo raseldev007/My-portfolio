@@ -83,50 +83,41 @@ function scrollUp() {
 }
 window.addEventListener('scroll', scrollUp)
 
-/*=============== MODAL LOGIC ===============*/
-function openNBDA() {
-    document.getElementById('nbdaModal').style.display = 'block';
-    document.body.style.overflow = 'hidden';
-}
+/*=============== MODAL LOGIC (Refactored) ===============*/
+// Generic helper to manage modal state
+const toggleModal = (modalId, show) => {
+    const modal = document.getElementById(modalId);
+    if (!modal) return;
 
-function closeNBDA() {
-    document.getElementById('nbdaModal').style.display = 'none';
-    document.body.style.overflow = 'auto';
-}
+    modal.style.display = show ? 'block' : 'none';
+    document.body.style.overflow = show ? 'hidden' : 'auto';
+};
 
-function openAmarBari() {
-    document.getElementById('amarBariModal').style.display = 'block';
-    document.body.style.overflow = 'hidden';
-}
+// Event Delegation for Modals (Senior Pattern)
+// This handles both opening (via data attribute) and closing (via class)
+document.addEventListener('click', (e) => {
+    // 1. Open Modal
+    const trigger = e.target.closest('[data-modal-target]');
+    if (trigger) {
+        const modalId = trigger.getAttribute('data-modal-target');
+        toggleModal(modalId, true);
+    }
 
-function closeAmarBari() {
-    document.getElementById('amarBariModal').style.display = 'none';
-    document.body.style.overflow = 'auto';
-}
-
-function openWeatherModal() {
-    document.getElementById('weatherModal').style.display = 'block';
-    document.body.style.overflow = 'hidden';
-}
-
-function closeWeatherModal() {
-    document.getElementById('weatherModal').style.display = 'none';
-    document.body.style.overflow = 'auto';
-}
-
-window.onclick = function (event) {
-    const modals = [
-        document.getElementById('nbdaModal'),
-        document.getElementById('amarBariModal'),
-        document.getElementById('weatherModal')
-    ];
-    modals.forEach(modal => {
-        if (event.target == modal) {
-            modal.style.display = "none";
+    // 2. Close Modal (Close Icon)
+    if (e.target.classList.contains('modal__close') || e.target.closest('.modal__close')) {
+        const modal = e.target.closest('.modal');
+        if (modal) {
+            modal.style.display = 'none';
             document.body.style.overflow = 'auto';
         }
-    });
-}
+    }
+
+    // 3. Close Modal (Outside Click)
+    if (e.target.classList.contains('modal')) {
+        e.target.style.display = "none";
+        document.body.style.overflow = 'auto';
+    }
+});
 
 /*=============== CONTACT FORM ===============*/
 const contactForm = document.getElementById('contact-form'),

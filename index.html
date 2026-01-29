@@ -13,7 +13,10 @@
 
   <link rel="stylesheet" href="assets/css/styles.css">
 
-  <title>Portfolio Website</title>
+  <!-- SEO & Metadata -->
+  <title>MD RASEL | Expert Flutter & App Developer</title>
+  <meta name="description"
+    content="Portfolio of MD Rasel, a specialized App Developer building high-performance Android & iOS applications with Flutter, Firebase, and Clean Architecture.">
 </head>
 
 <body>
@@ -226,17 +229,14 @@
     </section>
 
 
-    <!--Services, Portfolio Highlight Scetion-->
+    <!--Services, Portfolio Highlight Section-->
 
     <section class="services section" id="services">
       <div class="container">
-        <h2 class="section__title"> Portfolio Highlights </h2>
+        <h2 class="section__title"> Technical Expertise </h2>
         <p class="section__description">
-          A showcase of my best work, featuring projects that reflect my skills, creativity, and dedication. From
-          innovative
-          app development to sleek front-end(UI-UX) designs, each project highlights my expertise in delivering
-          high-quality
-          digital solutions.
+          A showcase of my refined skillset, featuring projects that reflect technical depth and creativity.
+          From complex mobile architectures to responsive web solutions.
         </p>
       </div>
       <div class="services__container container grid">
@@ -265,7 +265,7 @@
           <i class="uil uil-map-marker services__icon"></i>
           <h3 class="services__title">Maps & Location</h3>
           <p class="services__description">
-            integrating Google Maps, geolocation tracking, and geocoding to build powerful location-based services and
+            Integrating Google Maps, geolocation tracking, and geocoding to build powerful location-based services and
             delivery apps.
           </p>
         </div>
@@ -286,22 +286,18 @@
 
     <section class="services section" id="portfolio">
       <div class="container">
-        <h2 class="section__title"> My Workspaces</h2>
+        <h2 class="section__title"> Featured Work</h2>
         <p class="section__description">
           I am a passionate app developer from Bangladesh, specializing in creating high-quality, user-friendly
-          applications. With expertise in modern technologies, I craft seamless digital experiences tailored to client
-          needs. My portfolio showcases diverse projects, from innovative startups to enterprise solutions. I prioritize
-          clean code, efficiency, and intuitive design to deliver top-notch applications. Constantly evolving with
-          industry trends, I aim to transform ideas into impactful digital solutions. Let’s collaborate to bring your
-          vision to life with excellence and creativity!
+          applications. My portfolio showcases diverse projects, from innovative startups to enterprise solutions.
         </p>
       </div>
 
       <div class="portfolio__container container grid">
         <!-- Project 1: Amar Bari -->
-        <div class="portfolio__item" onclick="openAmarBari()">
+        <div class="portfolio__item" data-modal-target="amarBariModal" role="button" tabindex="0">
           <div class="portfolio__img-box portfolio__img-box--colored portfolio__img-box--amarbari">
-            <img src="assets/img/amar-bari-logo.png" alt="Amar Bari Logo" class="portfolio__logo" />
+            <img src="assets/img/amar-bari-logo.png" alt="Amar Bari Logo" class="portfolio__logo" loading="lazy" />
           </div>
           <div class="portfolio__data">
             <p class="portfolio__subtitle">Flutter & Firebase</p>
@@ -312,9 +308,9 @@
         </div>
 
         <!-- Project 2: NBDA -->
-        <div class="portfolio__item" onclick="openNBDA()">
+        <div class="portfolio__item" data-modal-target="nbdaModal" role="button" tabindex="0">
           <div class="portfolio__img-box portfolio__img-box--colored portfolio__img-box--nbda">
-            <img src="assets/img/nbda-logo.jpg" alt="NBDA Logo" class="portfolio__logo" />
+            <img src="assets/img/nbda-logo.jpg" alt="NBDA Logo" class="portfolio__logo" loading="lazy" />
           </div>
           <div class="portfolio__data">
             <p class="portfolio__subtitle">Emergency Coordination</p>
@@ -326,9 +322,9 @@
         </div>
 
         <!-- Project 3: BD Weather -->
-        <div class="portfolio__item" onclick="openWeatherModal()">
+        <div class="portfolio__item" data-modal-target="weatherModal" role="button" tabindex="0">
           <div class="portfolio__img-box">
-            <img src="assets/img/portfolio-3.jpg" alt="BD Weather App" class="portfolio__img" />
+            <img src="assets/img/portfolio-3.jpg" alt="BD Weather App" class="portfolio__img" loading="lazy" />
           </div>
           <div class="portfolio__data">
             <p class="portfolio__subtitle">Data Intelligence</p>
@@ -338,17 +334,18 @@
           </div>
         </div>
 
-        <!-- Project 4: Web Designs -->
-        <div class="portfolio__item">
+        <!-- Project 4: ACOS E-Pharmacy -->
+        <div class="portfolio__item" data-modal-target="acosModal" role="button" tabindex="0">
           <div class="portfolio__img-box">
-            <img src="assets/img/portfolio-1.png" alt="Web Design" class="portfolio__img" />
+            <img src="assets/img/acos-landing.png" alt="ACOS E-Pharmacy" class="portfolio__img" loading="lazy" />
           </div>
           <div class="portfolio__data">
-            <p class="portfolio__subtitle">UI/UX Design</p>
-            <h3 class="portfolio__title">Modern Web UI</h3>
-            <p class="portfolio__description">Collection of responsive web interfaces focused on premium accessibility.
+            <p class="portfolio__subtitle">Web Development</p>
+            <h3 class="portfolio__title">ACOS E-Pharmacy</h3>
+            <p class="portfolio__description">Complete e-pharmacy solution with role-based dashboard and prescription
+              management.
             </p>
-            <span class="portfolio__button">Showcase Coming Soon <i class="uil uil-clock"></i></span>
+            <span class="portfolio__button">View Case Study <i class="uil uil-arrow-right"></i></span>
           </div>
         </div>
       </div>
@@ -451,6 +448,42 @@
           <div class="modal__footer">
             <a href="https://github.com/raseldev007/bd-weather-app" target="_blank" class="button">Code Exploration</a>
             <a href="weather-details.html" target="_blank" class="button button--ghost">Interactive Demo</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- ACOS Pharmacy Modal -->
+      <div id="acosModal" class="modal">
+        <div class="modal__container">
+          <i class="uil uil-times modal__close" onclick="closeAcos()"></i>
+
+          <h2 class="modal__title">ACOS E-Pharmacy</h2>
+          <p class="modal__description">
+            Your trusted partner in healthcare. A complete digital pharmacy solution allowing users to order medicines,
+            upload prescriptions, and track deliveries.
+          </p>
+
+          <div class="modal__case-study">
+            <div class="modal__case-item">
+              <span class="modal__case-label">The Goal</span>
+              <p class="stat-text">To simplify medicine delivery through technology and trust, ensuring quality care is
+                just a click away.</p>
+            </div>
+          </div>
+
+          <div class="modal__list">
+            <div class="modal__list-item"><i class="uil uil-check-circle modal__icon"></i> <span class="stat-text">Smart
+                Logistics</span></div>
+            <div class="modal__list-item"><i class="uil uil-check-circle modal__icon"></i> <span
+                class="stat-text">Verified Inventory</span></div>
+            <div class="modal__list-item"><i class="uil uil-check-circle modal__icon"></i> <span
+                class="stat-text">Digital Prescriptions</span></div>
+          </div>
+
+          <div class="modal__footer">
+            <a href="https://raseldev007.github.io/ACOS-E-Pharmacy-Website/" target="_blank" class="button">Live
+              Website</a>
+            <a href="acos-pharmacy-details.html" target="_blank" class="button button--ghost">View Details</a>
           </div>
         </div>
       </div>
